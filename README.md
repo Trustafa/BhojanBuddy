@@ -11,3 +11,6 @@ Today, prob
 
 # Pizza
 free
+
+# Today's plan
+kill leo yay
