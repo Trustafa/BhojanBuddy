@@ -29,56 +29,103 @@
     border: 1px solid #ccc;
     border-top: none;
   }*/
+  #foodimg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 
   .Tabs {
-    width: 80%;
+    width: 100%;
     height: auto;
     min-height: 400px;
     background: #053742;
-    margin: 3.5rem auto 1.5rem;
-    padding: 2rem 1rem;
     color: #E8F0F2;
-    border-radius: 2rem;
-    @media (max-width: 769px) {
-     padding: 2rem 0;
-    }
+    padding-bottom: 100px;
    }
    ul.nav {
-    width: 60%;
+    width: 100%;
     margin: 0 auto 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 1px solid #39A2DB;
-    border-radius: 2rem;
     padding-left: 0px;
     @media (max-width: 768px) {
       width: 90%;
     }
   }
   ul.nav li {
-    width: 50%;
+    width: 100%; /* Adjusted to evenly distribute three tabs */
     padding: 1rem;
     list-style: none;
     text-align: center;
     cursor: pointer;
     transition: all 0.7s;
-    border-bottom-left-radius: 2rem;
-    border-top-left-radius: 2rem;
+    border-radius: 0; /* Removed border-radius for even distribution */
   }
-  ul.nav li:nth-child(2) {
-    border-radius: 0;
-    border-bottom-right-radius: 2rem;
-    border-top-right-radius: 2rem;
-  }
+  
   ul.nav li:hover {
     background: rgba(50, 224, 196, 0.15);
   }
+  
   ul.nav li.active {
-    background: #39A2DB;
+    border-bottom: 2px solid #39A2DB;
+    font-weight: bold;
   }
+
+  ul.nav li:not(.active) {
+    border-bottom: none;
+  }
+ /* ul.nav li:nth-child(2) {
+    border-radius: 0;
+    border-bottom-right-radius: 2rem;
+    border-top-right-radius: 2rem;
+  }*/
 .FirstTab p,
-.SecondTab p {
+.SecondTab p,
+.ThirdTab p {
   font-size: 2rem;
   text-align: center;
+}
+
+#icons {
+  list-style: none;
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.titleinfo {
+  width: 100%;
+  background: #053742; /* Background color applied to the titleinfo div */
+  color: #E8F0F2;
+  padding-bottom: 40px;
+  padding: 20px 0;
+}
+
+.titleinfo h1 {
+  padding-top: 30px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+}
+
+.description {
+  background: #053742; /* Background color applied to the titleinfo div */
+  color: #E8F0F2;
+  padding: 20px;
+}
+
+.description h4 {
+  color: grey;
+  font-weight: normal;
+}
+
+.description p {
+  font-size: medium;
+}
+
+.iconsimg {
+  width: 50px;
+  height: 50px;
 }
