@@ -1,0 +1,29 @@
+{
+  "name": "bhojanbuddy",
+  "version": "1.0.0",
+  "description": "food and tings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trustafa/BhojanBuddy.git"
+  },
+  "keywords": [
+    "epic"
+  ],
+  "author": "sus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Trustafa/BhojanBuddy/issues"
+  },
+  "homepage": "https://github.com/Trustafa/BhojanBuddy#readme",
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "nodemon": "^3.0.1"
+  }
+}
