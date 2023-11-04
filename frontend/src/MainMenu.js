@@ -1,18 +1,28 @@
 import React from 'react';
 
-import {FaHome, FaUser, FaCartPlus} from 'react-icons/fa';
+import { FaHome, FaUser, FaCartPlus } from 'react-icons/fa';
 
-export const MainMenu = () => { 
-    return (
-        <div className="MainMenu">
-            <a href="/" className="menuItem" > <FaHome /> </a>
-            <a href="/settings" className="menuItem" > <FaUser /> </a>
-            <a href="/contact" className="menuItem" > <FaCartPlus /> </a>
-            <a href="/basket" className="menuItem" > <FaHome /> </a>
-            <a href="/receipes" className="menuItem" > <FaHome /> </a>
-        </div>
-    );
+export const MainMenu = () => {
+  return (
+    <div className="mainMenu">
+      <MenuItem Icons={<FaHome />} link="/" />
+      <MenuItem Icons={<FaUser />} link="/settings" />
+      <MenuItem Icons={<FaCartPlus />} link="/contact" />
+      <MenuItem Icons={<FaHome />} link="/basket" />
+      <MenuItem Icons={<FaHome />} link="/recipes" />
+    </div>
+  );
 };
 
+const MenuItem = (props) => {
+  const { Icons, link } = props;
+  return (
+    <div className="menuItem">
+      <a href={link} className="menuItemLink">
+        {Icons}
+      </a>
+    </div>
+  );
+};
 
 export default MainMenu;

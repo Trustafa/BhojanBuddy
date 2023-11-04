@@ -11,17 +11,20 @@ import React from 'react';
 
 function App() {
     return (
-      <Router>
-          <MainMenu />
-          <Routes>
-              <Route exact path='/' element={<Home />} />
+    <div className="app">
+        <Router>
+            <MainMenu />
+            <Routes>
+            <Route exact path='/' element={<Home />} />
               <Route path='/settings' element={<UserSettings />} />
               <Route path='/contact' element={<Support />} />
               <Route path='/recipes' element={<Recipes />} />
               <Route path='/basket' element={<Basket />} />
-          </Routes>
-      </Router>
+            </Routes>
+        </Router>
+    </div>
   );
+
 }
 
 

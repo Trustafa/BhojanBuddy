@@ -7,8 +7,32 @@
     background-color: #ed5c5c;
     align-items: center ;
     margin: 0 auto;
+    height: 100vh;
 }
 
+.mainMenu{
+    background-color: rgb(122, 183, 237);
+    position: fixed;
+    bottom: 0;
+    width: 900px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+ 
+
+.menuItemLink{
+    color: #fff;
+    text-decoration: none;
+    font-size: 50px;
+    padding: 20px;
+    display: inline-block;
+    transition: all 0.5s ease;
+}
+
+.menuItem:active{
+    transform: scale(1.3);
+}
 
 
 
