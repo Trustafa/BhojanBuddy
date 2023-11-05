@@ -191,3 +191,93 @@ box-shadow: 0px 2px 2px -1px rgba(74, 74, 104, 0.10) inset;
 .newThisWeekContainer{
     padding-bottom: 100px; 
 }
+
+
+
+
+
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .tab-container {
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  .tab-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 50%;
+  }
+  
+  .tab-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .active-tab {
+    display: block;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inactive-tab {
+    display: none;
+  }
+  
+  .input-field {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+
+
+  /* Define styles for hidden and visible elements */
+.hidden {
+   visibility: hidden;
+  }
+  
+.visible {
+     visibility: visible;
+}
+.formContainer{
+    background-color: antiquewhite;
+    width: 700px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
