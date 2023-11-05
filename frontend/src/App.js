@@ -19,9 +19,9 @@ function App() {
   
   };
   return (
-    <div className="tab-container">
+    <div className='app'>
       {userLoggedIn && 
-        <div>
+        <div >
           <h2>Welcome, User!</h2>
           <button onClick={handleLogout}>Logout</button>
           <Router>
