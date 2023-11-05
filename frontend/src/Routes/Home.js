@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { FcNext, FcPrevious } from 'react-icons/fc';
+import {Login, Signup} from "./Auth";
 const FoodOptions = ["Lunch", "Dinner", "Breakfast", "Snacks", "Dessert", "Brunch", "Drinks", "All"];
 const optionsPerPage = 2;
 
@@ -315,6 +316,30 @@ const jsonData = [
   
   
 
+const UserAuthForm = (props) => {
+  const [isLoginForm, setIsLoginForm] = useState(true);
+
+  const toggleForm = () => {
+    setIsLoginForm(!isLoginForm);
+  };
+
+  return (
+    <div className="tab-container">
+      <button className={`tab-button ${isLoginForm ? 'active' : ''}`} onClick={toggleForm}>
+        Login
+      </button>
+      <button className={`tab-button ${!isLoginForm ? 'active' : ''}`} onClick={toggleForm}>
+        Signup
+      </button>
+      <div className={`tab-content ${isLoginForm ? 'active-tab' : 'inactive-tab'}`}>
+        <Login />
+      </div>
+      <div className={`tab-content ${!isLoginForm ? 'active-tab' : 'inactive-tab'}`}>
+        <Signup />
+      </div>
+    </div>
+  );
+};
 
 const Home = () => {
     return (
