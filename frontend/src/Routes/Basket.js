@@ -52,10 +52,10 @@ const Basket = () => {
     return (
         <div className="Basket">
             <form onSubmit={handleSubmit}>
-                <label htmlFor="fname">Name of Dish:</label><br />
-                <input type="text" id="fname" name="fname" required /><br />
+                <label htmlFor="fname">Name of Dish:</label>
+                <input type="text" id="fname" name="fname" required />
 
-                <label>Ingredients:</label><br />
+                <label>Ingredients:</label>
                 {ingredients.map((ingredient, index) => (
                     <div key={`ingredient${index}`}>
                         <input
